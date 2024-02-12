@@ -1,24 +1,38 @@
 {
-  "name": "clase15-dianaledist",
+  "name": "challenge17",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "server.js",
   "scripts": {
-    "build": ".\\node_modules\\.bin\\tsc -p .",
-    "start": "node build/index.js"
+    "dev": "nodemon server.js -p 8080 -m FORK",
+    "DBscript": "node ./persistence/store/script.js",
+    "start": "0x server.js -p 8080",
+    "test": "node benchmark.js"
   },
   "keywords": [],
-  "author": "Diana Di Stefano",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^4.17.11",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "socket.io": "^4.0.1",
-    "typescript": "^4.2.4"
+    "autocannon": "7.9.0",
+    "bcrypt": "5.0.1",
+    "cluster": "0.7.7",
+    "compression": "1.7.4",
+    "connect-mongo": "4.6.0",
+    "dotenv": "16.0.1",
+    "express": "4.18.1",
+    "express-session": "1.17.3",
+    "firebase-admin": "11.0.0",
+    "knex": "2.1.0",
+    "minimist": "1.2.6",
+    "mysql": "2.18.1",
+    "nodemon": "2.0.16",
+    "normalizr": "3.6.2",
+    "pino": "8.3.1",
+    "pug": "3.0.2",
+    "socket.io": "4.5.0",
+    "sqlite3": "5.0.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "7.2.0"
   }
 }
